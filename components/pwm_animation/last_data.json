@@ -1,0 +1,6 @@
+{
+    "arg": 24.7,
+    "power": 37.2,
+    "code": "import math\n\ndef frac(x):\n    while x < 0:\n        x = x + 1.0\n    while x > 1.0:\n        x = x - 1.0\t\n    return x\n\ndef xsin(x, power):\n    x = frac(x)\n    return math.pow(math.sin(math.pi*x), power*2) \n\ndef func(x, x_frac, power, arg, **kw):\n    d = arg/100\n    value = 0\n    value = value + xsin(x_frac + d, power = power)\n    value = value + xsin(x_frac - d, power = power)\n    return value ",
+    "max_value": 65535
+}
